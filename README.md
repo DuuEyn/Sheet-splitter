@@ -97,15 +97,17 @@ This script is intended to split an existing Google Sheets file into multiple fi
    git clone https://github.com/DuuEyn/Sheet-splitter
    ```
 2. Open the target Google Spreadsheet, click `Extensions` on the menu then click `Apps Script`
+   
    ![Menu Screenshot][menu-screenshot]
-3. Copy the script in the `newSheet.gs` file and paste it in Apps Script.
-4. Update the following variables with the destination folder ID, Sheet ID, and Sheet tab:
+4. Copy the script in the `newSheet.gs` file and paste it in Apps Script.
+5. Update the following variables with the destination folder ID, Sheet ID, and Sheet tab:
    ```sh
    var destFolder = DriveApp.getFolderById('folder_id');
    var destSheet = SpreadsheetApp.openById('sheet_id');
    destSheet.getSheetByName('sheet_tab')
    ```
-5. Select the function name in the menu, in this case `newSheet`, then click `Run`
+6. Select the function name in the menu, in this case `newSheet`, then click `Run`
+
    ![GAS Screenshot][gas-screenshot]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -116,7 +118,7 @@ This script is intended to split an existing Google Sheets file into multiple fi
 ## Usage
 
 This script can quickly split a Sheets file with multiple tabs to separate files. The user can also specify which Google Drive folder to store the files to and, if needed, store the URLs of the newly created files on another spreadsheet.
-This script must be bound to the target sheet and the user would have repeat the installation steps for each of the Sheets file they'd like to split.
+This script must be bound to the target Google Sheets file and the user would have repeat the installation steps for each of the Sheets file they'd like to split.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,7 +178,7 @@ Project Link: [https://github.com/DuuEyn/Sheet-splitter](https://github.com/DuuE
 [license-url]: https://github.com/DuuEyn/Sheet-splitter/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/ian-dewaine-diche-69406a2bb
-[menu-screenshot]: images/menu_screenshot.png
-[gas-screenshot]: images/gas_screenshot.png
+[menu-screenshot]: images/menu-screenshot.png
+[gas-screenshot]: images/gas-screenshot.png
 [gas.js]: https://img.shields.io/badge/Google%20Apps%20Script-4A4A55?style=for-the-badge&logo=googleappsscript&logoColor=white
 [gas-url]: https://www.google.com/script/start/
